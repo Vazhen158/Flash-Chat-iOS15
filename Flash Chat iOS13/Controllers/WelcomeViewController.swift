@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
         
         var charIndex = 0.0
         titleLabel.text = ""
-        let titleText = "⚡️FlashChat"
+        let titleText = K.appName
         for letter in titleText { // создаем цикл и таймер в нем, чтобы буквы заголовка появлялись на экране поочередно с задержкой
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)
